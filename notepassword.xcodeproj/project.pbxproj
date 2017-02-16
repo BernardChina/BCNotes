@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92AF5D4D1E398691002C1E09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AF5D4C1E398691002C1E09 /* main.m */; };
+		92AF5D501E398691002C1E09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AF5D4F1E398691002C1E09 /* AppDelegate.m */; };
+		92AF5D581E398691002C1E09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92AF5D571E398691002C1E09 /* Assets.xcassets */; };
+		92AF5D5B1E398691002C1E09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92AF5D591E398691002C1E09 /* LaunchScreen.storyboard */; };
+		92AF5D641E398F9B002C1E09 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AF5D631E398F9B002C1E09 /* MainViewController.m */; };
+		92AF5D671E399D1D002C1E09 /* AddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AF5D661E399D1D002C1E09 /* AddNoteViewController.m */; };
+		92AF5D6A1E39A2CC002C1E09 /* FMDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AF5D691E39A2CC002C1E09 /* FMDBHelper.m */; };
+		92AF5D6D1E39BD84002C1E09 /* NoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AF5D6C1E39BD84002C1E09 /* NoteModel.m */; };
+		92DA93911E3BB9AE005EB633 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA93901E3BB9AE005EB633 /* MainTableViewCell.m */; };
+		92DA93941E3CACC2005EB633 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA93931E3CACC2005EB633 /* LoginViewController.m */; };
+		92DA93961E3D0013005EB633 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92DA93951E3D0013005EB633 /* images.xcassets */; };
+		D15E52B32C86FBBE5563516E /* libPods-notepassword.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D1865F180F30217AED2355 /* libPods-notepassword.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8A757A655E5B2B10CBA0A895 /* Pods-notepassword.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notepassword.debug.xcconfig"; path = "Pods/Target Support Files/Pods-notepassword/Pods-notepassword.debug.xcconfig"; sourceTree = "<group>"; };
+		92AF5D481E398691002C1E09 /* notepassword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notepassword.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92AF5D4C1E398691002C1E09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		92AF5D4E1E398691002C1E09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		92AF5D4F1E398691002C1E09 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		92AF5D571E398691002C1E09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92AF5D5A1E398691002C1E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92AF5D5C1E398691002C1E09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92AF5D621E398F9B002C1E09 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		92AF5D631E398F9B002C1E09 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		92AF5D651E399D1D002C1E09 /* AddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNoteViewController.h; sourceTree = "<group>"; };
+		92AF5D661E399D1D002C1E09 /* AddNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNoteViewController.m; sourceTree = "<group>"; };
+		92AF5D681E39A2CC002C1E09 /* FMDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBHelper.h; sourceTree = "<group>"; };
+		92AF5D691E39A2CC002C1E09 /* FMDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBHelper.m; sourceTree = "<group>"; };
+		92AF5D6B1E39BD84002C1E09 /* NoteModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteModel.h; sourceTree = "<group>"; };
+		92AF5D6C1E39BD84002C1E09 /* NoteModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteModel.m; sourceTree = "<group>"; };
+		92DA938E1E3BB1EF005EB633 /* notepassword-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "notepassword-prefix.pch"; sourceTree = "<group>"; };
+		92DA938F1E3BB9AE005EB633 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
+		92DA93901E3BB9AE005EB633 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
+		92DA93921E3CACC2005EB633 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		92DA93931E3CACC2005EB633 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		92DA93951E3D0013005EB633 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
+		C6D1865F180F30217AED2355 /* libPods-notepassword.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-notepassword.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2BF8F8B8706E89498B5E4F6 /* Pods-notepassword.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notepassword.release.xcconfig"; path = "Pods/Target Support Files/Pods-notepassword/Pods-notepassword.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92AF5D451E398691002C1E09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D15E52B32C86FBBE5563516E /* libPods-notepassword.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D6D9F42A122D9B5E3033BFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A757A655E5B2B10CBA0A895 /* Pods-notepassword.debug.xcconfig */,
+				D2BF8F8B8706E89498B5E4F6 /* Pods-notepassword.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		92AF5D3F1E398691002C1E09 = {
+			isa = PBXGroup;
+			children = (
+				92AF5D4A1E398691002C1E09 /* notepassword */,
+				92AF5D491E398691002C1E09 /* Products */,
+				7D6D9F42A122D9B5E3033BFA /* Pods */,
+				F32420052B25B6745CBFD7E0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		92AF5D491E398691002C1E09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92AF5D481E398691002C1E09 /* notepassword.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92AF5D4A1E398691002C1E09 /* notepassword */ = {
+			isa = PBXGroup;
+			children = (
+				92AF5D4E1E398691002C1E09 /* AppDelegate.h */,
+				92AF5D4F1E398691002C1E09 /* AppDelegate.m */,
+				92AF5D621E398F9B002C1E09 /* MainViewController.h */,
+				92AF5D631E398F9B002C1E09 /* MainViewController.m */,
+				92DA938F1E3BB9AE005EB633 /* MainTableViewCell.h */,
+				92DA93901E3BB9AE005EB633 /* MainTableViewCell.m */,
+				92AF5D651E399D1D002C1E09 /* AddNoteViewController.h */,
+				92AF5D661E399D1D002C1E09 /* AddNoteViewController.m */,
+				92DA93921E3CACC2005EB633 /* LoginViewController.h */,
+				92DA93931E3CACC2005EB633 /* LoginViewController.m */,
+				92AF5D681E39A2CC002C1E09 /* FMDBHelper.h */,
+				92AF5D691E39A2CC002C1E09 /* FMDBHelper.m */,
+				92AF5D6B1E39BD84002C1E09 /* NoteModel.h */,
+				92AF5D6C1E39BD84002C1E09 /* NoteModel.m */,
+				92AF5D571E398691002C1E09 /* Assets.xcassets */,
+				92DA93951E3D0013005EB633 /* images.xcassets */,
+				92AF5D591E398691002C1E09 /* LaunchScreen.storyboard */,
+				92AF5D5C1E398691002C1E09 /* Info.plist */,
+				92AF5D4B1E398691002C1E09 /* Supporting Files */,
+			);
+			path = notepassword;
+			sourceTree = "<group>";
+		};
+		92AF5D4B1E398691002C1E09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				92AF5D4C1E398691002C1E09 /* main.m */,
+				92DA938E1E3BB1EF005EB633 /* notepassword-prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F32420052B25B6745CBFD7E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6D1865F180F30217AED2355 /* libPods-notepassword.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92AF5D471E398691002C1E09 /* notepassword */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92AF5D5F1E398691002C1E09 /* Build configuration list for PBXNativeTarget "notepassword" */;
+			buildPhases = (
+				3BCD614408491B205D02E390 /* [CP] Check Pods Manifest.lock */,
+				92AF5D441E398691002C1E09 /* Sources */,
+				92AF5D451E398691002C1E09 /* Frameworks */,
+				92AF5D461E398691002C1E09 /* Resources */,
+				DED4A69DD0E5E770729F62F0 /* [CP] Embed Pods Frameworks */,
+				CB78409B37A9E5FB550C2992 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = notepassword;
+			productName = notepassword;
+			productReference = 92AF5D481E398691002C1E09 /* notepassword.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92AF5D401E398691002C1E09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = notePassword;
+				TargetAttributes = {
+					92AF5D471E398691002C1E09 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = L7JLWB6FU8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 92AF5D431E398691002C1E09 /* Build configuration list for PBXProject "notepassword" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92AF5D3F1E398691002C1E09;
+			productRefGroup = 92AF5D491E398691002C1E09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92AF5D471E398691002C1E09 /* notepassword */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92AF5D461E398691002C1E09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92DA93961E3D0013005EB633 /* images.xcassets in Resources */,
+				92AF5D5B1E398691002C1E09 /* LaunchScreen.storyboard in Resources */,
+				92AF5D581E398691002C1E09 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BCD614408491B205D02E390 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB78409B37A9E5FB550C2992 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-notepassword/Pods-notepassword-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DED4A69DD0E5E770729F62F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-notepassword/Pods-notepassword-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92AF5D441E398691002C1E09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92DA93941E3CACC2005EB633 /* LoginViewController.m in Sources */,
+				92AF5D671E399D1D002C1E09 /* AddNoteViewController.m in Sources */,
+				92AF5D6D1E39BD84002C1E09 /* NoteModel.m in Sources */,
+				92DA93911E3BB9AE005EB633 /* MainTableViewCell.m in Sources */,
+				92AF5D6A1E39A2CC002C1E09 /* FMDBHelper.m in Sources */,
+				92AF5D501E398691002C1E09 /* AppDelegate.m in Sources */,
+				92AF5D4D1E398691002C1E09 /* main.m in Sources */,
+				92AF5D641E398F9B002C1E09 /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		92AF5D591E398691002C1E09 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92AF5D5A1E398691002C1E09 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92AF5D5D1E398691002C1E09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		92AF5D5E1E398691002C1E09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92AF5D601E398691002C1E09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A757A655E5B2B10CBA0A895 /* Pods-notepassword.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L7JLWB6FU8;
+				GCC_PREFIX_HEADER = "notepassword/notepassword-prefix.pch";
+				INFOPLIST_FILE = notepassword/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.notepassword.pwd.notepassword;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92AF5D611E398691002C1E09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2BF8F8B8706E89498B5E4F6 /* Pods-notepassword.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L7JLWB6FU8;
+				GCC_PREFIX_HEADER = "notepassword/notepassword-prefix.pch";
+				INFOPLIST_FILE = notepassword/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.notepassword.pwd.notepassword;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92AF5D431E398691002C1E09 /* Build configuration list for PBXProject "notepassword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92AF5D5D1E398691002C1E09 /* Debug */,
+				92AF5D5E1E398691002C1E09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92AF5D5F1E398691002C1E09 /* Build configuration list for PBXNativeTarget "notepassword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92AF5D601E398691002C1E09 /* Debug */,
+				92AF5D611E398691002C1E09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92AF5D401E398691002C1E09 /* Project object */;
+}
