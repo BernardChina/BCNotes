@@ -26,12 +26,8 @@
     MainViewController *mainController = [[MainViewController alloc] init];
     UINavigationController *controller = [[UINavigationController alloc] initWithRootViewController:mainController];
     self.window.rootViewController = controller;
-    [self.window makeKeyAndVisible];
     
-//    if ([FMDBHelper sharedInstance].isSSL && ![[NSUserDefaults standardUserDefaults] boolForKey:@"notepassword_islogined"]) {
-//        LoginViewController *loginController = [[LoginViewController alloc] init];
-//        loginController.isLogined = YES;
-//    }
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

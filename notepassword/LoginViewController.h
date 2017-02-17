@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "LoginViewControllerViewModel.h"
+
 @interface LoginViewController : UIViewController
 
-@property (nonatomic, assign) BOOL isLogined;
+@property (nonatomic, strong) LoginViewControllerViewModel *viewModel;
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		925802AF1E56C1B300CC475D /* LoginViewControllerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 925802AE1E56C1B300CC475D /* LoginViewControllerViewModel.m */; };
 		92AF5D4D1E398691002C1E09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AF5D4C1E398691002C1E09 /* main.m */; };
 		92AF5D501E398691002C1E09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AF5D4F1E398691002C1E09 /* AppDelegate.m */; };
 		92AF5D581E398691002C1E09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92AF5D571E398691002C1E09 /* Assets.xcassets */; };
@@ -23,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		8A757A655E5B2B10CBA0A895 /* Pods-notepassword.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notepassword.debug.xcconfig"; path = "Pods/Target Support Files/Pods-notepassword/Pods-notepassword.debug.xcconfig"; sourceTree = "<group>"; };
+		925802AD1E56C1B300CC475D /* LoginViewControllerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewControllerViewModel.h; sourceTree = "<group>"; };
+		925802AE1E56C1B300CC475D /* LoginViewControllerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewControllerViewModel.m; sourceTree = "<group>"; };
 		92AF5D481E398691002C1E09 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92AF5D4C1E398691002C1E09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92AF5D4E1E398691002C1E09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				92AF5D661E399D1D002C1E09 /* AddNoteViewController.m */,
 				92DA93921E3CACC2005EB633 /* LoginViewController.h */,
 				92DA93931E3CACC2005EB633 /* LoginViewController.m */,
+				925802AD1E56C1B300CC475D /* LoginViewControllerViewModel.h */,
+				925802AE1E56C1B300CC475D /* LoginViewControllerViewModel.m */,
 				92AF5D681E39A2CC002C1E09 /* FMDBHelper.h */,
 				92AF5D691E39A2CC002C1E09 /* FMDBHelper.m */,
 				92AF5D6B1E39BD84002C1E09 /* NoteModel.h */,
@@ -254,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92DA93941E3CACC2005EB633 /* LoginViewController.m in Sources */,
+				925802AF1E56C1B300CC475D /* LoginViewControllerViewModel.m in Sources */,
 				92AF5D671E399D1D002C1E09 /* AddNoteViewController.m in Sources */,
 				92AF5D6D1E39BD84002C1E09 /* NoteModel.m in Sources */,
 				92DA93911E3BB9AE005EB633 /* MainTableViewCell.m in Sources */,

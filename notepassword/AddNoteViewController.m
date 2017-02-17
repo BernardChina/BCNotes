@@ -68,4 +68,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+    NSLog(@"AddNoteViewController dealloc");
+}
+
 @end

@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "MainViewController.h"
 #import "FMDBHelper.h"
+#import "LoginViewControllerViewModel.h"
 
 #import <Masonry/Masonry.h>
 #import <RZDataBinding/RZDataBinding.h>
@@ -27,6 +28,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.viewModel = [[LoginViewControllerViewModel alloc] init];
     
     self.view.backgroundColor = UIColorFromRGB(0x128B35);
     
@@ -78,6 +81,8 @@
         make.left.equalTo(self.view).offset(12);
         make.top.equalTo(self.view).offset(22);
     }];
+    
+    [self.backButton rz_bindKey:RZDB_KP(UIButton, hidden) toKeyPath:RZDB_KP(LoginViewControllerViewModel, hideBackButton) ofObject:self.viewModel];
 }
 
 - (void)setUpTitleLabel {
@@ -181,10 +186,6 @@
     [[FMDBHelper sharedInstance] addNote:sql];
 }
 
-- (void)setIsLogined:(BOOL)isLogined {
-    self.backButton.hidden = isLogined;
-}
-
 - (void)tapView:(UITapGestureRecognizer *)tapGestureRecognizer {
     [self.view endEditing:YES];
 }
@@ -196,6 +197,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc {
+    NSLog(@"MainViewController dealloc");
 }
 
 

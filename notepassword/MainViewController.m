@@ -14,8 +14,7 @@
 #import "LoginViewController.h"
 
 #import <Masonry/Masonry.h>
-
-
+#import <RZDataBinding/RZDataBinding.h>
 
 @interface MainViewController () <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 
@@ -53,7 +52,7 @@
     
     if ([FMDBHelper sharedInstance].isSSL && ![[NSUserDefaults standardUserDefaults] boolForKey:@"notepassword_islogined"]) {
         LoginViewController *loginController = [[LoginViewController alloc] init];
-        loginController.isLogined = YES;
+        loginController.viewModel.hideBackButton = YES;
         [self.navigationController presentViewController:loginController animated:YES completion:nil];
         return;
     }
@@ -196,7 +195,10 @@
 - (void)login:(id)object {
     LoginViewController *controller = [[LoginViewController alloc] init];
     [self.navigationController presentViewController:controller animated:YES completion:nil];
-    
+}
+
+- (void)dealloc {
+    NSLog(@"MainViewController dealloc");
 }
 
 @end
