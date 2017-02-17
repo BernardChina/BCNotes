@@ -11,6 +11,7 @@
 #import "FMDBHelper.h"
 
 #import <Masonry/Masonry.h>
+#import <RZDataBinding/RZDataBinding.h>
 
 @interface LoginViewController ()
 
@@ -18,6 +19,7 @@
 @property (nonatomic, strong) UIButton *backButton;
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UIButton *nextButton;
+@property (nonatomic, strong) UIImageView *logoImageView;
 
 @end
 
@@ -28,14 +30,28 @@
     
     self.view.backgroundColor = UIColorFromRGB(0x128B35);
     
+    [self setUpLogoImageView];
     [self setUpTextField];
     [self setUpBackButton];
     [self setUpTitleLabel];
     [self setUpNextButton];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapView:)];
+    [self.view addGestureRecognizer:tap];
 }
 
 - (BOOL)prefersStatusBarHidden {
     return YES;
+}
+
+- (void)setUpLogoImageView {
+    [self.view addSubview:self.logoImageView];
+    
+    [self.logoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view).offset(100);
+        make.width.height.equalTo(@(100));
+        make.centerX.equalTo(self.view);
+    }];
 }
 
 - (void)setUpTextField {
@@ -45,7 +61,7 @@
     [view addSubview:self.textField];
     [self.view addSubview:view];
     [view mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view).offset(100);
+        make.centerY.equalTo(self.view);
         make.left.equalTo(self.view).offset(25);
         make.right.equalTo(self.view).offset(-25);
         make.height.mas_equalTo(44);
@@ -71,16 +87,28 @@
         make.centerX.equalTo(self.view);
         make.width.mas_equalTo(100);
     }];
+    [self.textField rz_addTarget:self action:@selector(textChanged:) forKeyPathChange:RZDB_KP(UITextField, text)];
 }
 
 - (void)setUpNextButton {
     [self.view addSubview:self.nextButton];
+    self.nextButton.enabled = NO;
     [self.nextButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view).offset(50);
         make.right.equalTo(self.view).offset(-50);
         make.top.equalTo(self.textField.mas_bottom).offset(60);
         make.height.mas_equalTo(44);
     }];
+}
+
+- (UIImageView *)logoImageView {
+    if (!_logoImageView) {
+        _logoImageView = [[UIImageView alloc] init];
+        _logoImageView.layer.cornerRadius = 50;
+        _logoImageView.layer.masksToBounds = YES;
+        _logoImageView.image = [UIImage imageNamed:@"logo"];
+    }
+    return _logoImageView;
 }
 
 - (UILabel *)titleLabel {
@@ -105,6 +133,8 @@
 - (UITextField *)textField {
     if (!_textField) {
         _textField = [[UITextField alloc] init];
+        _textField.secureTextEntry = YES;
+        _textField.keyboardType = UIKeyboardTypeNumberPad;
         _textField.layer.cornerRadius = 5;
         _textField.placeholder = @"密码";
         _textField.backgroundColor = [UIColor whiteColor];
@@ -115,15 +145,18 @@
 - (UIButton *)nextButton {
     if (!_nextButton) {
         _nextButton = [[UIButton alloc] init];
+        _nextButton.layer.cornerRadius = 5;
         [_nextButton addTarget:self action:@selector(nextAction:) forControlEvents:UIControlEventTouchUpInside];
         _nextButton.backgroundColor = [UIColor whiteColor];
         [_nextButton setTitleColor:UIColorFromRGB(0x128B35) forState:UIControlStateNormal];
+        [_nextButton setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
         [_nextButton setTitle:@"下一步" forState:UIControlStateNormal];
     }
     return _nextButton;
 }
 
 - (void)backAction:(UIButton *)button {
+    [self.view endEditing:YES];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -133,11 +166,8 @@
         NSArray *array = [[FMDBHelper sharedInstance] select:sqld];
         
         if (array.count > 0) {
-//            [self.navigationController popToRootViewControllerAnimated:YES];
             [self dismissViewControllerAnimated:YES completion:nil];
             [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"notepassword_islogined"];
-//            MainViewController *controller = [[MainViewController alloc] init];
-//            [self.navigationController pushViewController:controller animated:YES];
         } else {
             NSLog(@"密码错误");
         }
@@ -153,6 +183,14 @@
 
 - (void)setIsLogined:(BOOL)isLogined {
     self.backButton.hidden = isLogined;
+}
+
+- (void)tapView:(UITapGestureRecognizer *)tapGestureRecognizer {
+    [self.view endEditing:YES];
+}
+
+- (void)textChanged:(UITextField *)textField {
+    self.nextButton.enabled = [self.textField.text stringByReplacingOccurrencesOfString:@" " withString:@""].length > 0;
 }
 
 - (void)didReceiveMemoryWarning {
