@@ -23,7 +23,7 @@
 
 /* Begin PBXFileReference section */
 		8A757A655E5B2B10CBA0A895 /* Pods-notepassword.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notepassword.debug.xcconfig"; path = "Pods/Target Support Files/Pods-notepassword/Pods-notepassword.debug.xcconfig"; sourceTree = "<group>"; };
-		92AF5D481E398691002C1E09 /* notepassword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notepassword.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92AF5D481E398691002C1E09 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92AF5D4C1E398691002C1E09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92AF5D4E1E398691002C1E09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		92AF5D4F1E398691002C1E09 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 		92AF5D491E398691002C1E09 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				92AF5D481E398691002C1E09 /* notepassword.app */,
+				92AF5D481E398691002C1E09 /* Notes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		92AF5D471E398691002C1E09 /* notepassword */ = {
+		92AF5D471E398691002C1E09 /* Notes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92AF5D5F1E398691002C1E09 /* Build configuration list for PBXNativeTarget "notepassword" */;
+			buildConfigurationList = 92AF5D5F1E398691002C1E09 /* Build configuration list for PBXNativeTarget "Notes" */;
 			buildPhases = (
 				3BCD614408491B205D02E390 /* [CP] Check Pods Manifest.lock */,
 				92AF5D441E398691002C1E09 /* Sources */,
@@ -148,9 +148,9 @@
 			);
 			dependencies = (
 			);
-			name = notepassword;
+			name = Notes;
 			productName = notepassword;
-			productReference = 92AF5D481E398691002C1E09 /* notepassword.app */;
+			productReference = 92AF5D481E398691002C1E09 /* Notes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -182,7 +182,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				92AF5D471E398691002C1E09 /* notepassword */,
+				92AF5D471E398691002C1E09 /* Notes */,
 			);
 		};
 /* End PBXProject section */
@@ -376,7 +376,7 @@
 				INFOPLIST_FILE = notepassword/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.notepassword.pwd.notepassword;
+				PRODUCT_BUNDLE_IDENTIFIER = com.notepassword.pwd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -392,7 +392,7 @@
 				INFOPLIST_FILE = notepassword/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.notepassword.pwd.notepassword;
+				PRODUCT_BUNDLE_IDENTIFIER = com.notepassword.pwd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -410,7 +410,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92AF5D5F1E398691002C1E09 /* Build configuration list for PBXNativeTarget "notepassword" */ = {
+		92AF5D5F1E398691002C1E09 /* Build configuration list for PBXNativeTarget "Notes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92AF5D601E398691002C1E09 /* Debug */,
