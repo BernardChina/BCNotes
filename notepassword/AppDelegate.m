@@ -29,6 +29,7 @@
     self.window.rootViewController = controller;
 //1
     //2
+    //3
     
     [self.window makeKeyAndVisible];
     
