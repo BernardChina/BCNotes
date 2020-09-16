@@ -27,7 +27,7 @@
     MainViewController *mainController = [[MainViewController alloc] init];
     UINavigationController *controller = [[UINavigationController alloc] initWithRootViewController:mainController];
     self.window.rootViewController = controller;
-    //1,2
+    //1,2，3
 
     [self.window makeKeyAndVisible];
     
